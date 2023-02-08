@@ -1,0 +1,13 @@
+﻿@namespace BlazorPilet1.Ui.Components
+@attribute [PiralExtension("Test.Extension")]
+
+<div style="background: silver;">
+    Hello, i am the extension.<br />
+    The Value is: <strong>@Parameters.Value</strong>
+</div>
+
+@code {
+    [Parameter]
+    [PiralParameter("params")]
+    public TestExtensionParams Parameters { get; set; }
+}

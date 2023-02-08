@@ -1,0 +1,8 @@
+﻿@page "/image"
+@inject IPiletService _piletService
+
+<h1>See the image here:</h1>
+<figure>
+    <img src="@_piletService.GetUrl("images/image.jpg")" alt="hills" />
+    <footer><small>Image made by <a href="https://unsplash.com/de/fotos/hncBQgYR9R0">Jeremy Bishop</a></small></footer>
+</figure>
